@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font (biar ga default Times New Roman) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ffb6c1;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+}
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffb6c1;
+        padding: 15px 30px;
+    }
+
+    .logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    .nav-links a:hover {
+        background-color: #ffc0cb;
+        border-radius: 5px;
+    }
+
+    /* Hero */
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #ffe4e1;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        background-color: #ff69b4;
+        color: white;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .btn:hover {
+        background-color: #ff85c1;
+    }
+
+    /* Content */
+    .content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px;
+        background-color: #fff0f5;
+    }
+
+    .card {
+        border: 1px solid #ffc0cb;
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #ffeef3;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 20px;
+        color: #d97ca8;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .portfolio-container img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffb6c1;
+        color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyWeb</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">portofolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="ilan.jpg" alt="Foto Ilan" class="profile-img">
+        <h1>ilan's space</h1>
+        <p>Web Developer (amin) & UI Designer yang suka hal-hal lucu ✨<br/>Fresh Graduate · Suka Manga · Pecinta cowo fiksi</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+        <div class="card">
+            <h2>get to know me✨</h2>
+            <p> Halo! Nama saya <strong style="color:#d97ca8">Ilan</strong>, seorang mahasiswa Teknik Informatika semester 4 yang baru belajar pemrograman web.
+              Saya suka membuat tampilan web yang cantik dan mudah digunakan. Hobi saya membaca komik, dengerin lagu, mendesain dan melukis! 🎨🖌️
+              Saya terbuka untuk <strong style="color:#d97ca8">berteman & kolaborasi</strong>.</p>
+        </div>
+        <div class="card">
+            <h2>skills👑˚₊۶ৎ˙⋆</h2>
+            <p>saya pandai desain editing dan video editing (aminn). Saya mudah berbaur dengan orang baru juga. </p>
+        </div>
+        <div class="card">
+            <h2>hobi⏰˙⋆✮</h2>
+            <p>hobi saya membaca komik, dengerin lagu, nonton film/drama, mendesain dan melukis! 🎨🖌️.</p>
+        </div>
+    </section>
+
+            <!-- Portfolio -->
+        <section class="portfolio">
+            <h2>My Portfolio ✨</h2>
+            <div class="portfolio-container">
+                <img src="3.png" alt="Project 1">
+                <img src="4.png" alt="Project 2">
+                <img src="5.png" alt="Project 3">
+                <img src="6.png" alt="Project 4">
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 MyWeb. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

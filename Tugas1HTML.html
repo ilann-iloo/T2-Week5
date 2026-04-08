@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>latihan Annis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(12, 12, 124);
+        }
+
+        table, th, td {
+        border:1px solid black;
+        }
+
+        /* Style the header */
+        header {
+        background-color: #f990dd;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 30%;
+        background: #ffadf4;
+        padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #ffcefe;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #f990dd;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+</style>
+</head>
+<body>
+
+<h2>Belajar HTML</h2>
+<p>semua ini belajar dari w3schools.</p>
+<p>semuanya masih dasar dan belum sempurna.</p>
+
+<header>
+  <h2>Annis's Space</h2>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="#">about me</a></li>
+      <li><a href="#">pendidikan</a></li>
+      <li><a href="#">kontak</a></li>
+    </ul>
+
+    <img src="gbr/kawaii.jpeg" alt="picture of myself" width="400">
+  </nav>
+
+<section>  
+  <article>
+    <h1>About Me</h1>
+    <p>Lorem, ipsum dolor <s>sit amet consectetur</s> adipisicing elit. <b>Quasi dolores id quae</b>, quas cupiditate fugiat sapiente provident dolorem repellendus, <i>dignissimos, quaerat voluptate</i>. Corporis molestias <u>doloremque blanditiis provident</u>. Excepturi, dicta facere.</p>
+    <p>Lorem ipsum dolor <mark>sit amet consectetur adipisicing elit</mark>. Impedit laudantium fugit, <small>beatae expedita </small>non dolorem repudiandae iusto <strong>laboriosam aperiam possimus</strong> aliquam itaque. Voluptates libero et at enim eos officiis! Officia?</p>
+
+    <h3>A basic HTML table</h3>
+
+        <table style="width:100%">
+        <tr>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Hobi</th>
+        </tr>
+        <tr>
+            <td>Annisa Makarima Ahlaq</td>
+            <td>18 April 2006</td>
+            <td>melukis, menggambar, membaca, dan menonton</td>
+        </tr>
+        <tr>
+            <td>ilan</td>
+            <td>18 April 2006</td>
+            <td>tidur</td>
+        </tr>
+        </table>
+
+        <section id="kontak">
+            <h2>Form Kontak</h2>
+
+            <form>
+                <label>Nama:</label><br>
+                <input type="text" name="nama"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br><br>
+
+                <label>Tanggal Lahir:</label><br>
+                <input type="date" name="tanggal"><br><br>
+
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+                <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                <br><br>
+
+                <label>Pesan:</label><br>
+                <textarea name="pesan"></textarea><br><br>
+
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+
+        
+  </article>
+</section>
+
+<footer>
+  <p>&copy; 2026 Annisa Makarima Ahlaq F1D02410106</p>
+</footer>
+
+</body>
+</html>
